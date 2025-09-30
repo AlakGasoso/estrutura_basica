@@ -27,5 +27,4 @@ def game_loop(window):
     while True:
         if recebe_eventos() == False:
             break
-        desenha(window) 
-
+        desenha(window)
