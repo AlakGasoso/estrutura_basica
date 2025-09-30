@@ -18,18 +18,9 @@ def recebe_eventos():
     return True 
                                
 def desenha (window):
-    azul     = (0, 0, 255)
-    branco   = (255, 255, 255)
-    vermelho = (255, 0, 0)
 
-    vertice_azul     = [(0,0),   (100,0),  (100,200), (0,200)]
-    vertice_branco   = [(100,0), (200,0),  (200,200), (100,200)]
-    vertice_vermelho = [(200,0), (300,0),  (300,200), (200,200)]
-
-    pygame.draw.polygon(window, azul, vertice_azul)
-    pygame.draw.polygon(window, branco, vertice_branco)
-    pygame.draw.polygon(window, vermelho, vertice_vermelho) 
-
+    window.fill ((255,0,0)) 
+    
     pygame.display.update() 
     
 def game_loop(window):
